@@ -1,4 +1,4 @@
-const num=9;
+const num=2;
 function isPrime(num){
 for(let i=2;i<num;i++){
     if(num%i==0){
