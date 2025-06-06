@@ -1,4 +1,4 @@
-let n=57443;
+let n=10000000;
 let count=0;
 
  while(n!=0){
