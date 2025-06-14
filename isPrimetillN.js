@@ -1,4 +1,4 @@
-const n=50;
+const n=40;
 
 function isPrime(num){
     for(let i=2;i<num;i++){
@@ -10,8 +10,8 @@ function isPrime(num){
     return true;
 }
 
-for(let i=2;i<=n;i++){
-    if(isPrime(i)){
-        console.log(i)
+for(let j=2;j<=n;j++){
+    if(isPrime(j)){
+        console.log(j)
     }
 }
