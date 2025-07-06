@@ -5,8 +5,8 @@ let findElement=13;
 // if findElement present return index, else return -1
 for(let i of arr){// why for..of isn't used?
     if(i===findElement){
-        console.log(i);
-        return;
-    }
+        console.log(arr[i]);
+       return ;
 }
-return -1;
+}
+

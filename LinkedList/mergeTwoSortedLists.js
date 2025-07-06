@@ -1,16 +1,10 @@
-/**
- * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
- */
-/**
- * @param {ListNode} list1
- * @param {ListNode} list2
- * @return {ListNode}
- */
-var mergeTwoLists = function (list1, list2) {
+function ListNode(val, next) {
+    this.val = (val === undefined ? 0 : val);
+    this.next = (next === undefined ? null : next);
+}
+
+
+let mergeTwoLists = function (list1, list2) {
     let newList = new ListNode();
     let current = newList;
     while (list1 != null && list2 != null) {
@@ -35,3 +29,15 @@ var mergeTwoLists = function (list1, list2) {
     }
     return newList.next;
 };
+//Create input data (this is where you "write data")
+let list1 = new ListNode(1, new ListNode(2, new ListNode(3)));
+let list2 = new ListNode(7, new ListNode(8, new ListNode(9)));
+
+//   Call the function
+let merged = mergeTwoLists(list1, list2);
+
+//   Print the result
+while (merged !== null) {
+    console.log(merged.val);
+    merged = merged.next;
+}
