@@ -3,15 +3,18 @@ var isAnagram = function (s, t) {
     const freq = {};
 
     for (let val of s) {
-        if (freq[val])
-            freq[val]++;
-        else freq[val] = 1;
+        if (freq[val]==undefined)
+            freq[val]=1;
+        else freq[val]++;
     }
     console.log(freq);
 
     for (let val of t) {
         if (freq[val] > 0) freq[val]--;
         else return false;
+        
     }
-    return true;
+    console.log(freq)
+    return true; 
 };
+console.log(isAnagram("she", "hes"))

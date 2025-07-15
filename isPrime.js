@@ -1,4 +1,4 @@
-const num=2;
+
 function isPrime(num){
 for(let i=2;i<num;i++){
     if(num%i==0){
@@ -8,4 +8,4 @@ for(let i=2;i<num;i++){
     return true;
 
 }
-console.log(isPrime(num));
+console.log(isPrime(7));
